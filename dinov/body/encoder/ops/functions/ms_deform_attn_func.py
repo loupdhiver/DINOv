@@ -19,7 +19,7 @@ from torch.autograd import Function
 from torch.autograd.function import once_differentiable
 
 try:
-    import MultiScaleDeformableAttention as MSDA
+    from mmcv.ops.multi_scale_deform_attn import MultiScaleDeformableAttention as MSDA
 except ModuleNotFoundError as e:
     info_string = (
         "\n\nPlease compile MultiScaleDeformableAttention CUDA op with the following commands:\n"

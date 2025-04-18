@@ -29,3 +29,4 @@ kornia==0.6.4
 torchmetrics==0.6.0
 progressbar
 pillow==9.4.0
+wandb

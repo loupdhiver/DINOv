@@ -1,5 +1,4 @@
-# --------------------------------------------------------
-# X-Decoder -- Generalized Decoding for Pixel, Image, and Language
+ X-Decoder -- Generalized Decoding for Pixel, Image, and Language
 # Copyright (c) 2022 Microsoft
 # Licensed under The MIT License [see LICENSE for details]
 # Written by Xueyan Zou (xueyan@cs.wisc.edu)
@@ -16,7 +15,7 @@ WEIGHT: ''
 PORT: 53711
 VERBOSE: true
 track_thresh_hold: 1
-OUTPUT_DIR: '../data/output/test'
+OUTPUT_DIR: '/data/coco_panoptic_style_dataset/test/'
 # misc
 LOADER:
   JOINT: false
@@ -57,7 +56,7 @@ MODEL:
     AUTOGRESSIVE: True
   BACKBONE:
     NAME: swin
-    PRETRAINED: 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth'
+    PRETRAINED: '/data/experimentation/dinov/model_swinL.pth'
     LOAD_PRETRAINED: true
     SWIN:
       PRETRAIN_IMG_SIZE: 384

@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-WORKDIR /app
+WORKDIR /app/
 COPY ./ ./
 
 # Install apt-getable dependencies
